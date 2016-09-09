@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/StatelessCat/mwe-hylar#readme",
   "dependencies": {
-    "hylar": "^1.7.5"
+    "hylar": "1.7.6"
   },
   "devDependencies": {
     "eslint": "^3.4.0",

@@ -10,7 +10,7 @@ const janedoe = JSON.stringify({
   'telephone': '(425) 123-4567',
   'url': 'http://www.janedoe.com' })
 
-const nok = JSON.stringify({
+const ok1 = JSON.stringify({
   '@id': 'http://adlnet.gov/expapi/verbs/experienced',
   'http://semweb.mmlab.be/ns/tincan2prov/display': {
     '@value': 'experienced',
@@ -18,7 +18,7 @@ const nok = JSON.stringify({
   }
 })
 
-const ok = JSON.stringify({
+const ok2 = JSON.stringify({
   '@id': 'http://adlnet.gov/expapi/verbs/experienced',
   'http://semweb.mmlab.be/ns/tincan2prov/display': {
     '@value': 'experienced'
@@ -47,8 +47,6 @@ const hylarLoadTest = function (jsonld) {
 }
 
 hylarLoadTest(janedoe)
-hylarLoadTest(ok)
-hylarLoadTest(nok)
-// { SyntaxError: Expected [1] QueryUnit or [29] UpdateUnit but "I" found.
-//     at peg$buildStructuredError (/home/xxx/code/mwe-hylar/node_modules/rdfstore/src/parser.js:2760:14)
+hylarLoadTest(ok1)
+hylarLoadTest(ok2)
 
